@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="..//css/style.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <title>Cruds</title>
+</head>
+<body style="background-color: #f9e6cb;">
+<div class="container ">
+        <div class="text-center m-5">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="dotted"></div>
+  <div class="book-container">
+    <h2 class="text-center  mb-5">
+    <i class="fa-solid fa-bookmark m-3"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark m-3"></i>
+  </h2>
+  <div class="mb-3">
+    <label for="bookmarkName" class="form-label fw-bold fs-5"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+    <input type="text" class="form-control p-2" id="bookmarkName" placeholder="Bookmark Name">
+  </div>
+  <div class="mb-3">
+    <label for="bookmarkUrl" class="form-label fw-bold fs-5"><i class="fa-solid fa-link"></i>Site URL</label>
+    <input type="url" class="form-control p-2" placeholder="Website URL" id="bookmarkUrl">
+  </div>
+ 
+    </div>
+  <div class="my-btn"> 
+      <button  class="submit-btn m-4 rounded-2" onclick="create()" >Submit</button>
+    </div>
+       <div class="dotted"></div>
+
+        <!-- Bookmarks Table -->
+        <div class="table-responsive mt-4">
+            <table class="table">
+                <thead class="table-light">
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bookmarkList" class="table-light" >
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <script src="..//js/script.js"></script>
+    <script src="..//js/bootstrap.bundle.js"></script>
+</body>
+</html>
