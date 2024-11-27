@@ -3,7 +3,7 @@ let urlInput = document.getElementById('bookmarkUrl');
 let bookmarkList = document.getElementById('bookmarkList')
 
 //create
-let dataPro;
+let dataPro=[]
 
 if (localStorage.webData !== null){
     dataPro = JSON.parse(localStorage.webData)
